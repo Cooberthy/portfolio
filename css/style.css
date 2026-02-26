@@ -1,0 +1,15 @@
+header {
+  background: cyan;
+  height: fit-content;
+  display: grid;
+}
+
+#aboutme {
+  text-align: right;
+}
+img {
+  height: 300px;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
