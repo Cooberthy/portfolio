@@ -1,15 +1,31 @@
 header {
-  background: cyan;
-  height: fit-content;
+  background-color: cadetblue;
+  height: 300px;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-#aboutme {
-  text-align: right;
+div {
+  padding: 15px;
 }
 img {
   height: 300px;
   display: flex;
-  margin: auto;
-  padding: 10px;
+  padding: 15px;
+}
+main {
+  display: grid;
+  grid-template-columns: 10% 35% 10% 35% 10%;
+}
+footer {
+  height: 150px;
+}
+.preview {
+  padding-top: 100px;
+}
+#aboutme {
+  color: transparent;
+}
+#contactme {
+  text-align: right;
 }
