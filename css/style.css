@@ -12,10 +12,15 @@ img {
   height: 300px;
   display: flex;
   padding: 15px;
+  min-width: 400px;
+}
+#itsme {
+  min-width: 400px;
 }
 main {
   display: grid;
-  grid-template-columns: 10% 35% 10% 35% 10%;
+  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 footer {
   height: 150px;
@@ -23,9 +28,31 @@ footer {
 .preview {
   padding-top: 100px;
 }
-#aboutme {
-  color: transparent;
+.outline {
+  outline: solid black;
+  border-radius: 15px;
 }
 #contactme {
   text-align: right;
+}
+
+@media (max-width: 850px) {
+  .main {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  #img1 {
+    grid-area: 1 / 2 / span 1;
+  }
+  #img2 {
+    grid-area: 2 / 2 / span 1;
+  }
+  #img3 {
+    grid-area: 3/ 2 / span 1;
+  }
+  #img4 {
+    grid-area: 4/ 2 / span 1;
+  }
+  #itsme {
+    min-width: 300px;
+  }
 }
