@@ -1,5 +1,16 @@
 const page = document.body;
 let darkmode = localStorage.getItem("darkmode");
+const dialog = document.getElementById("dialog");
+const wrapper = document.querySelector(".wrapper");
+
+function dialog1() {
+  dialog.showModal();
+}
+dialog.addEventListener("click", (e) => {
+  if (!wrapper.contains(e.target)) {
+    dialog.close();
+  }
+});
 
 if (darkmode === "yes") {
   page.classList.remove("light");

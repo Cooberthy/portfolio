@@ -10,7 +10,6 @@ img {
   height: 300px;
   display: flex;
   padding: 15px;
-  /* min-width: 400px; */
 }
 #itsme {
   min-width: 400px;
@@ -35,6 +34,7 @@ footer {
 }
 .outline:hover {
   box-shadow: 10px 10px;
+  cursor: pointer;
 }
 #contactme {
   text-align: right;
@@ -65,7 +65,7 @@ footer {
   color-scheme: light dark;
 
   --light-bg: ghostwhite;
-  --light-color: #2f4f4f;
+  --light-color: #020924;
   --light-code: tomato;
   --light-outline: rgb(177, 170, 170);
 
@@ -98,6 +98,7 @@ footer {
   top: 20px;
   right: 20px;
   border: none;
+  outline: solid light-dark(var(--light-outline), var(--dark-outline));
 }
 #switch svg:last-child {
   display: none;
@@ -108,4 +109,16 @@ footer {
 }
 .dark #switch svg:last-child {
   display: block;
+}
+dialog {
+  height: 700px;
+  width: 950px;
+  padding: 0;
+  outline: none;
+}
+dialog.wrapper {
+  padding: 16px;
+}
+.dialogimg {
+  height: 600px;
 }
