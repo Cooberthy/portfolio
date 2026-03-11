@@ -93,6 +93,9 @@ footer {
 .dark #switch svg:last-child {
   display: block;
 }
+#switch:hover {
+  cursor: pointer;
+}
 dialog {
   height: 700px;
   width: 820px;
