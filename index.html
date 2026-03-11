@@ -10,40 +10,24 @@
   <body class="light">
     <header>
       <div id="contactme">
-        <p>boy do i love informasjon</p>
-        <p>yippe</p>
+        <p id="contacttitle">contact me</p>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z"
+            />
+          </svg>
+          gmail: leonbergerud09@gmail.com
+        </p>
       </div>
       <img id="itsme" src="/img/pexels-goumbik-684385.jpg" alt="" />
       <div>
-        <div id="funnybutton">
-          <button id="switch" onclick="klikk()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#2f4f4f"
-            >
-              <path
-                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e3e3e3"
-            >
-              <path
-                d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
-              />
-            </svg>
-          </button>
-        </div>
-        <br />
-        <p></p>
-        <br />
         <p id="aboutme">
           "So careful of the type?" but no. From scarped cliff and quarried
           stone She cries, "A thousand types are gone: I care for nothing, all
@@ -54,7 +38,7 @@
     <main>
       <div id="img1" class="preview">
         <div onclick="dialog1()" class="outline">
-          <img src="/img/pexels-pixabay-275033.jpg" alt="" />
+          <img class="previewimg" src="/img/pexels-pixabay-275033.jpg" alt="" />
           <p>
             "So careful of the type?" but no. From scarped cliff and quarried
             stone She cries, "A thousand types are gone: I care for nothing, all
@@ -63,7 +47,7 @@
         </div>
       </div>
       <div id="img2" class="preview">
-        <div class="outline">
+        <div onclick="dialog2()" class="outline">
           <img src="/img/pexels-pixabay-275033.jpg" alt="" />
           <p>
             "So careful of the type?" but no. From scarped cliff and quarried
@@ -73,7 +57,7 @@
         </div>
       </div>
       <div id="img3" class="preview">
-        <div class="outline">
+        <div onclick="dialog3()" class="outline">
           <img src="/img/pexels-pixabay-275033.jpg" alt="" />
           <p>
             "So careful of the type?" but no. From scarped cliff and quarried
@@ -83,7 +67,7 @@
         </div>
       </div>
       <div id="img4" class="preview">
-        <div class="outline">
+        <div onclick="dialog4()" class="outline">
           <img src="/img/pexels-pixabay-275033.jpg" alt="" />
           <p>
             "So careful of the type?" but no. From scarped cliff and quarried
@@ -111,8 +95,77 @@
           </p>
         </div>
       </dialog>
+      <dialog id="dialog2">
+        <div class="wrap">
+          <img class="dialogimg" src="img/pexels-pixabay-275033.jpg" alt="" />
+          <p>
+            when you hear th eknel of a requiem bell when you hear th eknel of a
+            requiem bellwhen you hear th eknel of a requiem bellwhen you hear th
+            eknel of a requiem bellwhen you hear th eknel of a requiem bellwhen
+            you hear th eknel of a requiem bellwhen you hear th eknel of a
+            requiem bellwhen you hear th eknel of a requiem bellwhen you hear th
+            eknel of a requiem bell when you hear th eknel of a requiem bell
+            when you hear th eknel of a requiem bell when you hear th eknel of a
+            requiem bell
+          </p>
+        </div>
+      </dialog>
+      <dialog id="dialog3">
+        <div class="wrapp">
+          <img class="dialogimg" src="img/pexels-pixabay-275033.jpg" alt="" />
+          <p>
+            would you go running if you saw the real me maybe youd love me maybe
+            youd fear me but ill never ask you no thats super scary would you go
+            running if you saw the real me maybe youd love me maybe youd fear me
+            but ill never ask you no thats super scary would you go running if
+            you saw the real me maybe youd love me maybe youd fear me but ill
+            never ask you no thats super scary would you go running if you saw
+            the real me maybe youd love me maybe youd fear me but ill never ask
+            you no thats super scary would you go running if you saw the real me
+            maybe youd love me maybe youd fear me but ill never ask you no thats
+            super scary
+          </p>
+        </div>
+      </dialog>
+
+      <dialog id="dialog4">
+        <div class="wrappers">
+          <img class="dialogimg" src="img/pexels-pixabay-275033.jpg" alt="" />
+          <p>
+            if you got a real mess and wanna clean like the pros than you gotta
+            see this
+          </p>
+        </div>
+      </dialog>
     </main>
-    <footer></footer>
+    <footer>
+      <div id="funnybutton">
+        <button id="switch" onclick="klikk()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#2f4f4f"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
 

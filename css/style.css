@@ -14,16 +14,21 @@ img {
 #itsme {
   min-width: 400px;
 }
+@media (min-width: 850px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
+  place-items: center;
 }
 footer {
   height: 150px;
 }
-.preview {
-  padding: 75px;
+#contacttitle {
+  text-align: center;
+  font-size: 30px;
 }
 .outline {
   border-radius: 15px;
@@ -39,28 +44,6 @@ footer {
 #contactme {
   text-align: right;
 }
-
-@media (max-width: 850px) {
-  .main {
-    grid-template-columns: 1fr 1fr;
-  }
-  #img1 {
-    grid-area: 1 / 2 / span 1;
-  }
-  #img2 {
-    grid-area: 2 / 2 / span 1;
-  }
-  #img3 {
-    grid-area: 3/ 2 / span 1;
-  }
-  #img4 {
-    grid-area: 4/ 2 / span 1;
-  }
-  #itsme {
-    min-width: 300px;
-  }
-}
-
 :root {
   color-scheme: light dark;
 
@@ -95,7 +78,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   border: none;
   outline: solid light-dark(var(--light-outline), var(--dark-outline));
@@ -112,13 +95,51 @@ footer {
 }
 dialog {
   height: 700px;
-  width: 950px;
+  width: 820px;
   padding: 0;
   outline: none;
+  border-radius: 15px;
 }
 dialog.wrapper {
   padding: 16px;
 }
 .dialogimg {
-  height: 600px;
+  height: 490px;
+}
+dialog::backdrop {
+  background-color: black;
+  opacity: 0.4;
+}
+
+@media (max-width: 850px) {
+  main {
+    display: block;
+  }
+  #aboutme {
+    font-size: 11px;
+  }
+  #itsme {
+    min-width: 150px;
+    max-height: 150px;
+  }
+  .preview {
+    padding: 25px;
+  }
+  .dialogimg {
+    height: 300px;
+  }
+  dialog {
+    height: 500px;
+    width: 500px;
+  }
+  header {
+    height: fit-content;
+  }
+  .outline {
+    width: fit-content;
+  }
+}
+
+svg {
+  vertical-align: bottom;
 }
