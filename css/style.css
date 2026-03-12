@@ -6,6 +6,16 @@ header {
 div {
   padding: 15px;
 }
+#circle {
+  background-color: white;
+  height: 500px;
+  aspect-ratio: 1;
+  position: absolute;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
 img {
   height: 300px;
   display: flex;

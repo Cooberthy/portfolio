@@ -9,6 +9,19 @@ const wrap = document.querySelector(".wrap");
 const wrapp = document.querySelector(".wrapp");
 const wrappers = document.querySelector(".wrappers");
 
+const move = document.getElementById("circle");
+
+document.body.onpointermove = (event) => {
+  const { clientX, clientY } = event;
+
+  move.animate(
+    {
+      left: `${clientX}px`,
+      top: `${clientY}px`,
+    },
+    { duration: 1000, fill: "forwards" },
+  );
+};
 function dialog1() {
   dialog.showModal();
 }
