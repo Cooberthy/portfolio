@@ -8,9 +8,9 @@ const wrapper = document.querySelector(".wrapper");
 const wrap = document.querySelector(".wrap");
 const wrapp = document.querySelector(".wrapp");
 const wrappers = document.querySelector(".wrappers");
-
 const move = document.getElementById("circle");
 
+//blur that follows cursor
 document.body.onpointermove = (event) => {
   const { clientX, clientY } = event;
 
@@ -22,6 +22,8 @@ document.body.onpointermove = (event) => {
     { duration: 1000, fill: "forwards" },
   );
 };
+
+//showing modals and closing
 function dialog1() {
   dialog.showModal();
 }
@@ -58,11 +60,13 @@ overlay.addEventListener("click", (e) => {
   }
 });
 
+//checking if darkmode was on last time you were here
 if (darkmode === "yes") {
   page.classList.remove("light");
   page.classList.add("dark");
 }
 
+// activating light and darkmode
 function klikk() {
   if (page.classList.contains("light")) {
     page.classList.remove("light");

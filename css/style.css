@@ -6,11 +6,41 @@ header {
 div {
   padding: 15px;
 }
+#aboutme {
+  text-align: center;
+}
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1 2;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
 #circle {
   background-color: white;
-  height: 500px;
+  height: 400px;
   aspect-ratio: 1;
   position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right top,
+    light-dark(var(--light-gradient-start), var(--dark-gradient-start)),
+    light-dark(var(--light-gradient-end), var(--dark-gradient-end))
+  );
+  animation: rotate 20s infinite;
+  pointer-events: none;
+}
+#blur {
+  position: absolute;
+  filter: blur(200px);
 }
 h1 {
   font-size: 30px;
@@ -23,6 +53,8 @@ img {
 }
 #itsme {
   min-width: 400px;
+  border: solid light-dark(var(--light-outline), var(--dark-outline));
+  padding: 0;
 }
 @media (min-width: 850px) {
   main {
@@ -52,7 +84,7 @@ footer {
   cursor: pointer;
 }
 #contactme {
-  text-align: right;
+  text-align: center;
 }
 :root {
   color-scheme: light dark;
@@ -60,12 +92,16 @@ footer {
   --light-bg: ghostwhite;
   --light-color: #020924;
   --light-code: tomato;
-  --light-outline: rgb(177, 170, 170);
+  --light-outline: #5bd6e1;
+  --light-gradient-start: #52b9db;
+  --light-gradient-end: #b22fbe;
 
   --dark-bg: #020924;
   --dark-color: ghostwhite;
   --dark-code: gold;
-  --dark-outline: #2f4f4f;
+  --dark-outline: #5a1376;
+  --dark-gradient-start: #00ddc0;
+  --dark-gradient-end: #c9a0dc;
 }
 * {
   background-color: light-dark(var(--light-bg), var(--dark-bg));
@@ -129,10 +165,10 @@ dialog::backdrop {
     display: block;
   }
   #aboutme {
-    font-size: 11px;
+    font-size: 16px;
   }
   #itsme {
-    min-width: 150px;
+    min-width: 200px;
     max-height: 150px;
   }
   .preview {
@@ -151,8 +187,12 @@ dialog::backdrop {
   .outline {
     width: fit-content;
   }
+  #circle {
+    background: none;
+  }
 }
 
 svg {
   vertical-align: bottom;
+  fill: light-dark(var(--light-color), var(--dark-color));
 }

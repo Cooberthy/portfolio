@@ -11,3 +11,10 @@ Svg {
   height: auto;
   vertical-align: middle;
 }
+*:not(#blur, #circle) {
+  z-index: 3;
+}
+*:not(body, dialog, .outline, button) {
+  background-color: transparent;
+  position: sticky;
+}
